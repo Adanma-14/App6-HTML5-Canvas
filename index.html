@@ -53,12 +53,17 @@ function add_name() { //this function adds my name to the canvas
 
 }
 	
- var heart = new Image(); //this declares that the new variable "heart" has a new image
+  var heart = new Image(); //this declares that the new variable "heart" has a new image
   heart.src = "https://kcr.sdsu.edu/whats-your-love-language/"; //this is the URL link for the actual picture
   heart.onload = function add_image() { //this tell the function to connect to the image
 	  
 
 }
+
+function add_image(){ //the actual function that adds the image to the canvas
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    ctx.drawImage(puppy, 0, 0); //sets size for the picture to display in the canvas
 
 </script>
 
