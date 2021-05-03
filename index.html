@@ -62,6 +62,8 @@ function add_name() { //this function adds my name to the canvas
 function add_image(){ //this function adds the image to the canvas
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
+    var heart = new Image();
+	heart.src = 'Heart Image.jpeg'
     ctx.drawImage(heart, 5, 5); //tells the size for the picture that will display in the canvas
 	
 }
