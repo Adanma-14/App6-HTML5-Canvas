@@ -26,7 +26,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 -->
 	
    <head> 
-      <title>App6---HTML5-Canvas</title> //this shows the title of the app 
+      <title>App6---HTML5-Canvas</title> <!--this shows the title of the app --> 
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="apple-mobile-web-app-capable" content="yes">
       <link rel="stylesheet" href="w3.css">
@@ -50,6 +50,13 @@ function add_name() { //this function adds my name to the canvas
 	var ctx = canvas.getContext("2d");
 	ctx.font = "30px Arial"; //this sets the font for the text
 	ctx.fillText("Adanma Abolo", 10, 50); //this is to control the size of the text that will appear on the canvas
+
+}
+	
+ var heart = new Image(); //this declares that the new variable "heart" has a new image
+  heart.src = "https://kcr.sdsu.edu/whats-your-love-language/"; //this is the URL link for the actual picture
+  heart.onload = function add_image() { //this tell the function to connect to the image
+	  
 
 }
 
