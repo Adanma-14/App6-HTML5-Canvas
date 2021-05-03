@@ -55,16 +55,21 @@ function add_name() { //this function adds my name to the canvas
 	
   var heart = new Image(); //this declares that the new variable "heart" has a new image
   heart.src = "https://kcr.sdsu.edu/whats-your-love-language/"; //this is the URL link for the actual picture
-  heart.onload = function add_image() { //this tell the function to connect to the image
+  heart.onload = function add_image() { //this tells the function to connect to the image
 	  
-
 }
 
-function add_image(){ //the actual function that adds the image to the canvas
+function add_image(){ //this function adds the image to the canvas
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
-    ctx.drawImage(puppy, 0, 0); //sets size for the picture to display in the canvas
+    ctx.drawImage(puppy, 0, 0); //tells the size for the picture that will display in the canvas
+	
 }
+
+function clear_canvas(){ //this function clears/removes everything on the canvas
+	var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+	ctx.clearRect(1,1,700,400); //controls how much of the canvas to clear
 	
 </script>
 
